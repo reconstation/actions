@@ -1,0 +1,12 @@
+name: 'Action Auditor'
+description: 'Detect exposed API Keys.'
+inputs:
+  github_token:
+    description: "Get GitHub Token"
+    required: false
+    default: ${{ github.token }}
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.github_token }}
