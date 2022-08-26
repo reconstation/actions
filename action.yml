@@ -9,4 +9,4 @@ runs:
   using: "composite"
   steps:
     - id: Print All Actions
-      run: ls -la /home/runner/work/_actions/actions
+      run: docker images
