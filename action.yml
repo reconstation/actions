@@ -6,7 +6,7 @@ inputs:
     required: false
     default: ${{ github.token }}
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.github_token }}
+  using: "composite"
+  steps:
+    - id: Print All Actions
+      run: ls -la /home/runner/work/_actions/actions
