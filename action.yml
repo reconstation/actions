@@ -10,3 +10,4 @@ runs:
   steps:
     - id: Print All Actions
       run: docker images
+      shell: bash
